@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tathagat Tech</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+  <style>
+    .slider-dots {
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      z-index: 10;
+    }
+
+    .slider-dots span {
+      width: 10px;
+      height: 10px;
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .slider-dots .active {
+      background: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="fixed">
+    <span><i class="fa-solid fa-xmark"></i></span>
+    <div class="res-links">
+      <h4><a href="index.html">HOME</a></h4>
+      <h4><a href="aboutus.html">ABOUT</a></h4>
+      <h4><a href="services.html">SERVICES</a></h4>
+      <h4><a href="blog.html">BLOG</a></h4>
+    </div>
+  </div>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/Primary logo.png" alt="logo" class="headerlogo"></a>
+      <div class="nav-links" id="navlinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="aboutus.html">ABOUT</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+        </ul>
+      </div>
+      <i id="menutag" class="fa fa-bars"></i>
+    </nav>
+
+    <section class="hero-slider" id="heroSlider">
+      <div class="slider-track"> <!-- ✅ ADDED this wrapper -->
+        <div class="slide active">
+          <img src="images/bg1.png" alt="Slide 1">
+          <div class="slide-text">
+            <h1>WISDOM IN <br> EVERY SOLUTION</h1>
+            <a href="https://api.whatsapp.com/send/?phone=8805006332&text&type=phone_number&app_absent=0"
+              class="hero-btn">Get Solutions</a>
+          </div>
+        </div>
+        <div class="slide slideres">
+          <img src="images/2.png" alt="Slide 2">
+          <div class="slide-text">
+            <h1>LAUNCH YOUR FIRST <br> PRODUCT</h1>
+            <p>Student with a startup idea?<br>
+              We help you design, develop,<br>
+              and launch your first product.<br>
+              *@0 support cost</p>
+            <a href="https://api.whatsapp.com/send/?phone=8805006332&text&type=phone_number&app_absent=0"
+              class="hero-btn">Get Started</a>
+          </div>
+          <div class="disclaimer">*Special offer for students under 25 years age</div>
+        </div>
+      </div> <!-- ✅ END .slider-track -->
+      <div class="slider-dots" id="sliderDots"></div>
+    </section>
+    <div class="center-page">
+      <div class="center-image">
+        <img src="./images/bg1.png" alt="">
+      </div>
+      <div class="center-text">
+        <h1>WISDOM IN <br> EVERY SOLUTION </h1>
+        <div class="btn">
+          <a href="#">Get Solutions</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Your existing sections stay the same below... -->
+  <!--- our services -->
+  <section class="services">
+    <h1>Our Services</h1>
+    <div class="row">
+      <div class="service-column">
+        <h3>Tech Products</h3>
+        <img src="images/Tprod.png" class="service-icon">
+        <p>Our advanced IoT solutions are designed 
+          for seamless integration, dependable 
+          performance, and intelligent efficiency. 
+          Whether for home, office, or industrial 
+          use, they connect and simplify your world with ease.
+</p>
+        <a href="services.html" class="sbtn">Learn
+          More</a>
+      </div>
+      <div class="service-column">
+        <h3>Practical Education</h3>
+        <img src="images/Pedu.jpeg" class="service-icon">
+        <p>Our immersive training programs are 
+          designed for all skill levels—from 
+          beginners to aspiring experts. With 
+          a focus on real-world applications, 
+          participants gain practical skills, 
+          industry insights, and the confidence 
+          to thrive in today’s fast-evolving IoT landscape.</p>
+        <a href="services.html" class="sbtn">Learn
+          More</a>
+      </div>
+      <div class="service-column">
+        <h3>Automation Solutions</h3>
+        <img src="images/Smartsoln.png" class="service-icon" alt="">
+        <p>We provide innovative IoT solutions, cutting-edge 
+          robotics, advanced programming, and reliable electrical 
+          automation to streamline operations and drive smart, 
+          efficient technologies across industries.</p>
+        <a href="services.html" class="sbtn">Learn
+          More</a>
+      </div>
+    </div>
+  </section>
+  <!-- key benifits -->
+  <section class="keybenifits">
+    <h1>Key Benefits</h1>
+    <div class="row">
+      <div class="bcolumn">
+        <img src="images/Customizedsoln.svg" alt="Customized Solutions">
+        <div class="layer">
+          <h3>End-to-End Solutions,<br> Made for You</h3>
+        </div>
+      </div>
+      <div class="bcolumn">
+        <img src="images/Techsupp.svg" alt="Technical Support">
+        <div class="layer">
+          <h3>Experienced Support and Consultation</h3>
+        </div>
+      </div>
+      <div class="bcolumn">
+        <img src="images/mcs.svg" alt="Material and Components Supply">
+        <div class="layer">
+          <h3>On-Demand Supply. Zero Delays.</h3>
+        </div>
+      </div>
+      <div class="bcolumn">
+        <img src="images/ruprod.png" alt="Ready to Use Products">
+        <div class="layer">
+          <h3>High-Quality Tech, Low Operational Cost</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- what we have build-->
+  <section class="build-section">
+    <h2>What we've Build ?</h2>
+
+    <div class="stats-container">
+      <div class="stat-box">
+        <h3>1,000+</h3>
+        <p>Projects Developed</p>
+      </div>
+      <div class="divider"></div>
+      <div class="stat-box">
+        <h3>10+</h3>
+        <p>Technology Solutions</p>
+      </div>
+      <div class="divider"></div>
+      <div class="stat-box">
+        <h3>50+</h3>
+        <p>Training and Workshops</p>
+      </div>
+      <div class="divider"></div>
+      <div class="stat-box">
+        <h3>100%</h3>
+        <p>Client Satisfaction</p>
+      </div>
+    </div>
+
+    <div class="cta-text">
+      <p>Have a spark of an idea? A passion project brewing?<br>
+       — we offer free expert help to shape your vision into something real.</p>
+      <a href="https://api.whatsapp.com/send/?phone=8805006332&text&type=phone_number&app_absent=0" class="cta-btn">Get
+        Free Guidance</a>
+    </div>
+  </section>
+  <!--   footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo Section -->
+      <div class="footer-column">
+        <img src="images/Primary logo white red.png" alt="Tathagat Logo" class="footer-logo">
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="footer-column">
+        <h4>NAVIGATE THROUGH</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="aboutus.html">ABOUT</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/company/tathagattechindia/"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://t.me/tathagattechindia"><i class="fab fa-telegram-plane"></i></a>
+          <a href="https://www.instagram.com/tathagattech_india?igsh=MXF4aWJ1YzB4ZWIxNg=="><i
+              class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/15Ut7zZQkE/"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-column">
+        <h4>Contact Us.</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Near fitness GYM, Jadhav Nagar, Vadgaon BK, Pune, Maharashtra - 411041
+        </p>
+        <p><i class="fas fa-mars"></i> (+91) 8805006332</p>
+<p><i class="fas fa-venus"></i> (+91) 8805576270</p>
+        <p><i class="fas fa-envelope"></i> contact@tathagatch.com<br> tathagattechuniverse@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright © 2025 tathagattecch.com - All rights reserved</p>
+    </div>
+  </footer>
+  <!--------- javascript for menu ------------- --->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+    integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+
+    var navlinks = document.getElementById("navlinks");
+
+    function showMenu() {
+      navlinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navlinks.style.right = "-200px";
+    }
+
+    // Only run slider JS if screen width >= 600px
+    if (window.innerWidth >= 600) {
+      const track = document.querySelector('.slider-track');
+      const slides = document.querySelectorAll('.slider-track .slide');
+      const dotsContainer = document.getElementById('sliderDots');
+      let currentSlide = 0;
+      let interval;
+
+      // Create dots
+      slides.forEach((_, index) => {
+        const dot = document.createElement('span');
+        dot.addEventListener('click', () => {
+          goToSlide(index);
+          resetInterval();
+        });
+        dotsContainer.appendChild(dot);
+      });
+
+      const dots = dotsContainer.querySelectorAll('span');
+
+      function goToSlide(index) {
+        track.style.transform = `translateX(-${index * 100}%)`;
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[index].classList.add('active');
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[index].classList.add('active');
+        currentSlide = index;
+      }
+
+      function nextSlide() {
+        const nextIndex = (currentSlide + 1) % slides.length;
+        goToSlide(nextIndex);
+      }
+
+      function startInterval() {
+        interval = setInterval(nextSlide, 4000); // 4 seconds per slide
+      }
+
+      function resetInterval() {
+        clearInterval(interval);
+        startInterval();
+      }
+
+      const slider = document.getElementById('heroSlider');
+      slider.addEventListener('mouseenter', () => clearInterval(interval));
+      slider.addEventListener('mouseleave', startInterval);
+
+      // Initialize
+      goToSlide(currentSlide);
+      startInterval();
+    }
+  </script>
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
